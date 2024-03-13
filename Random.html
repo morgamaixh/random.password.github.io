@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="quote.css">
+</head>
+<body>
+    <div id="container">
+    <button id="btn">GET QUOTE</button>
+    <div id="content">
+        your quote will appear here
+    </div>
+</div>
+<script>
+    let btn = document.getElementById("btn");
+    let kuote = document.getElementById("content");
+    
+    
+
+    let quote = [
+    	'"The company reviews and revises its vision and mission statement periodically to ensure that they reflect the organisations current situation and future aspirations" By maina',
+	    '"The company should engage and involve all its stakeholders in the formulation and dismination of the vision and mission statements to ensure the understanding and commitment."By musee',
+	    '"The company should conduct comprehensive and systematic internal and external analysis by using various sources of data and methods of analysis to ensure their validity and reliability" by maina',
+     ' "It should maintain a constant update and adjustment of the internal and external analysis capture dynamic changes in the organisations performanceIt should update and adjust the internal and external analysis regularly to capture the dynamic changes in the organisations performance."by james'
+
+    ];
+
+     btn.addEventListener('click', ()=> {
+        
+        var randomQuote =   quote[Math.floor(Math.random() * quote.length)];
+        kuote.innerHTML = randomQuote;
+     });
+
+   
+    
+
+
+</script>
+</body>
+</html>

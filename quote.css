@@ -1,0 +1,33 @@
+* {
+    margin: 0px;
+    box-sizing: border-box;
+    padding: 0px;
+}
+
+#container {
+    justify-content: space-around;
+    height: max-content;
+    margin: 100px;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+    background-color: rgb(2, 2, 34);
+    border-radius: 15px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+#btn {
+    background-color: green;
+    color: white;
+    width: max-content;
+    font-weight: bolder;
+    border-radius: 15px;
+    padding: 5px;
+    margin-top: 5px;
+    cursor: pointer;
+}
+#content {
+    color: white;
+    margin-top: 20px;
+    font-size: 27px;
+}

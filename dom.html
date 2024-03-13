@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styleme.css">
+</head>
+<body>
+    <header class="header" id="head">MOVIES TO WATCH</header>
+    <button class="reveal-btn boxes">learn more</button>
+         <div class="hidden-content boxes">
+            Lord of rings
+            Lord of men
+            Lord of power
+            the rings
+           
+         </div>
+    
+
+     
+    <div id="bt1">enter</div>
+    <div id="bt2">enter</div>
+    <div id="bt3">enter</div>
+    
+
+    <script>
+      const revealBtn = document.querySelector(".reveal-btn");
+      const hiddenContent = document.querySelector(".hidden-content");
+       function revealContent(){
+
+        if(hiddenContent.classList.contains('reveal-btn')){
+          hiddenContent.classList.remove('reveal-btn')
+        }else{
+          hiddenContent.classList.add('reveal-btn')
+        }
+       }
+
+       revealBtn.addEventListener('click', revealContent)
+
+
+        //const  heading = document.getElementById('head');
+
+        //heading.style.fontSize = "20px";
+        //heading.style.color = "red"
+        //let ul = document.querySelector('ul');
+
+        //let li = document.createElement('li');
+
+        // adding elements in the dom
+        //ul.append(li);
+       // ading the text content in the aded elements
+        //li.innerText = 'x-men'
+       
+        
+        //modifying attributes and classes
+       
+        //li.setAttribute('id', 'heading');
+
+        //modifying classes
+
+       // li.classList.add("movies");
+
+        //traversing thE dom
+
+        //parentNode traversal 
+        //let l = document.getElementById("container");
+        //console.log(l.parentNode.parentNode.parentNode)
+        //console.log(l.parentElement.parentElement)
+
+     //   let x = document.querySelector("ul");
+
+        
+
+        //console.log(x.parentNode)
+        //console.log(x.parentElement)
+
+
+     //childNodes traversal
+     //spaces or indentation in the html document in the childNodes are counted as text elements
+     
+
+     //let x = document.querySelector("ul");
+
+     //console.log(x.childNodes)
+
+     //styling childs in the parent
+     //we use the indexing method
+     //ex
+
+      //x.childNodes[1].style.color = "red";
+      //console.log(x.childNodes[1])
+      //sibling nodes traversal
+       
+      //console.log(x.nextSibling)
+
+
+      //EVENT LISTENERS
+
+      //let btn = document.getElementById('bt1');
+      //let bt = document.getElementById('bt2');
+      //let b = document.getElementById('bt3');
+
+      //Mouseover event
+
+      //console.log(btn)
+      //btn.style.height = "50px";
+      //btn.style.width = "50px";
+      //btn.style.backgroundColor = "red"
+     // btn.style.margin = "5px"
+
+      //bt.style.height = "50px";
+      //bt.style.width = "50px";
+      //bt.style.backgroundColor = "blue"
+      //bt.style.margin = "5px"
+
+      //b.style.height = "50px";
+      //b.style.width = "50px";
+      //b.style.backgroundColor = "green"
+      //b.style.margin = "5px"
+
+
+      //btn.addEventListener('mouseover', () => {
+        //btn.style.backgroundColor = "blue"
+      //});
+      //btn.addEventListener('mouseout', () => {
+        //btn.style.backgroundColor = "red"
+      //});
+
+
+
+
+      //bt.addEventListener('mouseover', () => {
+        //bt.style.backgroundColor = "red"
+      //});
+      //bt.addEventListener('mouseout', () => {
+        //bt.style.backgroundColor = "blue"
+      //});
+
+
+      //b.addEventListener('mouseover', () => {
+        //b.style.backgroundColor = "blue"
+      //});
+      //b.addEventListener('mouseout', () => {
+        //b.style.backgroundColor = "green"
+      //});
+
+
+      
+
+
+
+    </script>
+</body>
+</html>

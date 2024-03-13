@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="random.css">
+</head>
+<body>
+    <div class="container">
+        <h1>
+            Generate a <Strong>Strong!!</Strong><br>random password 
+        </h1>
+
+        <input type="text" id="pass" placeholder="password">
+        <button id="btn" onclick="createPass()">generate password</button>
+        <button id="copy" onclick="copypass()">copy password</button>
+    </div>
+    
+
+
+    <script>
+        let btn = document.getElementById("btn");
+        let passwordBox = document.getElementById("pass");
+        let lengt = 12;
+        let alpha = "ABCDEFGHIJKLMNOPRSTUVWXYZ";
+        let lower = "abcdefghigklmnopqrstuvwzyz";
+        let symbol = "!@#$%^&**{}";
+        let num = "0123456789";
+        
+
+        let allChars = alpha + lower + symbol + num;
+        
+        function createPass(){
+            let password = "";
+
+        password += alpha[Math.floor(Math.random() * alpha.length)];
+        password += lower[Math.floor(Math.random() * lower.length)];
+        password += symbol[Math.floor(Math.random() * symbol.length)];
+        password += num[Math.floor(Math.random() * num.length)];
+
+        while(lengt > password.length){
+            password += allChars[Math.floor(Math.random() * allChars.length)];
+        }
+        passwordBox.value = password;
+        
+        }
+
+        function copypass(){
+            passwordBox.select();
+            document.execCommand("copy");
+        }
+        
+        
+
+    </script>
+</body>
+</html>
